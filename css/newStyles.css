@@ -1,0 +1,126 @@
+#intro {
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+hr {
+  border-color: black;
+}
+
+p {
+  font-size: 17px;
+}
+
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
+.imagePortfolio {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imageDiv {
+  margin-left: 1.5%;
+}
+
+.profilePic {
+  display: block;
+  margin: 0;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.intro {
+  padding: 0 2% 0 2%;
+}
+
+.about-changes {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  margin: 0;
+  color: black;
+}
+
+.intro {
+  padding-left: 35%;
+}
+
+.smallImg {
+  display: none;
+}
+
+.socialIcons {
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.divBackground {
+  background-image: url("https://image.ibb.co/kf0W1m/IMG_20180109_150304.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .divBackground {
+    background-color: rgb(56,130,157);
+    background-image: none;
+  }
+  .intro {
+    text-align: center;
+    padding: 0;
+    font-size: 30px;
+  }
+  .smallImg {
+    display: inline;
+  }
+  .socialIcons{
+    color: white;
+  }
+}
+
+.blueBackg {
+  background-color: rgb(98,163,194); /* rgb(56,130,157) */  
+}
+
+.silverBackg {
+  background-color: #cccccc;
+}
+
+.tools-changes {
+  text-align: center;
+}
+
+.tools-icons {
+  display: inline-block;
+  margin: 2% 2% 2% 2%;
+  height: 50px;
+  width: 50px;
+}
+
+.port-img {
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 10px 5px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(46,44,44,.19);
+}
+
+.port-img:hover{
+  opacity: 0.7;
+}
+
+.contact-changes {
+  padding-left: 20%;
+  padding-right: 20%;
+}

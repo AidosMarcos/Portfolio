@@ -1,0 +1,73 @@
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
+
+
+.imagePortfolio {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imageDiv {
+  margin-left: 1.5%;
+}
+
+.profilePic {
+  display: block;
+  margin: 0;
+  border-radius: 40%;
+}
+
+.intro {
+  padding: 0 2% 0 2%;
+}
+
+.about-changes {
+  padding-top: 15%;
+  margin: 0;
+  background-color: rgb(56,130,157);
+  color: white;
+}
+
+.skills-changes {
+  background-color: rgb(222,222,222);
+  width: 100%;
+}
+
+.portfolio-changes {
+  background-color: rgb(56,130,157);
+}
+
+.tools-changes {
+  text-align: center;
+}
+
+.tools-icons {
+  display: inline-block;
+  margin: 2% 2% 2% 2%;
+  height: 50px;
+  width: 50px;
+}
+
+.port-img {
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 10px 5px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(46,44,44,.19);
+}
+
+.port-img:hover{
+  opacity: 0.7;
+}
+
+#intro {
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+p {
+  font-size: 17px;
+}
