@@ -65,7 +65,8 @@ p {
 }
 
 .divBackground {
-  background-image: url("https://image.ibb.co/kf0W1m/IMG_20180109_150304.jpg");
+  /*background-image: url("https://image.ibb.co/kf0W1m/IMG_20180109_150304.jpg");*/
+  background-image: url("img/20180109_150304.jpg");
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
