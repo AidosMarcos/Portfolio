@@ -1,0 +1,35 @@
+body {
+  background-color: #5e5e5e;
+  margin-top: 20px;
+  margin-right: 120px;
+  margin-left: 120px;
+  font-family: 'Poppins', serif;
+}
+
+.roundCorners {
+  border-radius: 5%;
+}
+
+#jumbo {
+  background-color: rgb(208,156,118);
+}
+
+#lifeStory {
+  background-color: rgb(207,206,202);
+}
+
+#achivements {
+  background-color: rgb(207,206,202);
+}
+
+.textMargins {
+  margin: 0px 4% 0 4%;
+}
+
+.lineSpace {
+  line-height: 40px;
+}
+
+.whiteText {
+  color: white;
+}
