@@ -1,0 +1,39 @@
+
+#author {
+  text-align: right;
+}
+
+#btnQuote {
+  float: right;
+}
+
+.out-box {
+  margin-top: 5%;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.header-box {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.btn-box {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.quote-box {
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  padding: 5px;
+  font-size: 40px;
+  text-align: center;
+  border-style: dotted;
+  border-color: #c1d592;
+  font-family: 'Ranga', cursive;
+}
