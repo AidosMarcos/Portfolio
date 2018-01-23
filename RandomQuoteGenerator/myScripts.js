@@ -25,7 +25,7 @@ $(document).ready(function(){
         if (author) {
           $('#author').text('by ' + author);
         } else {
-          $('#author').text('by unknow author');
+          $('#author').text('by unknown author');
         }
         console.log(response);
       }
