@@ -15,6 +15,9 @@ p {
   font-size: 17px;
 }
 
+ul {
+  font-size: 17px;
+}
 
 .anchor {
   display: block;
@@ -71,11 +74,13 @@ p {
   background-size: cover;
   background-attachment: fixed;
   max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media screen and (max-width: 480px) {
   .divBackground {
-    background-color: rgb(56,130,157);
+    background-color: white;
     background-image: none;
   }
   .intro {
@@ -86,13 +91,10 @@ p {
   .smallImg {
     display: inline;
   }
-  .socialIcons{
-    color: white;
-  }
 }
 
 .blueBackg {
-  background-color: rgb(98,163,194); /* rgb(56,130,157) */  
+  background-color: rgb(98,163,194); /* rgb(56,130,157) */
 }
 
 .silverBackg {
@@ -104,6 +106,7 @@ p {
 }
 
 .tools-icons {
+  position: relative;
   display: inline-block;
   margin: 2% 2% 2% 2%;
   height: 50px;
@@ -123,4 +126,27 @@ p {
 .contact-changes {
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tools-icons .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(228,226,203,.24);
+  color: rgb(0,0,0);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -60px;
+  z-index: 1;
+}
+
+.tools-icons:hover .tooltipText {
+  visibility: visible;
 }
