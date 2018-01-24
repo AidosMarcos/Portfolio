@@ -19,6 +19,10 @@ ul {
   font-size: 17px;
 }
 
+a {
+  cursor: pointer;
+}
+
 .anchor {
   display: block;
   position: relative;
