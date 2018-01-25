@@ -57,7 +57,7 @@ function randomSearch() {
         console.log(data);
         var pages = data.query.pages;
         console.log(typeof pages);
-        for (var i= 0; i< 10; i++){               // Object.keys creates and array of the given object, in this case "pages" so now we can manipulate them in the for loop 
+        for (var i= 0; i< 10; i++){               // Object.keys creates and array of the given object, in this case "pages" so now we can manipulate them in the for loop
           $("#resultsBox").append('<div class="col-xs-12 resultDiv"><h4><a target="_blank" href="'+ pages[Object.keys(pages)[i]].fullurl +'">' + pages[Object.keys(pages)[i]].title + '</a></h4><p>' + pages[Object.keys(pages)[i]].extract +'</p></div>');
         }
       },
@@ -65,5 +65,4 @@ function randomSearch() {
         console.log(errorMessage);
        }
     });
-
 }
