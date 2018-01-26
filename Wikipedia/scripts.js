@@ -10,8 +10,28 @@ $('#btnLucky').on('click', function(e){
   randomSearch();
 });
 
-function requestSearch() {  //function to request info of user input
+// autocomplete while wrting term to search
+$('#searchBar').autocomplete({
+  source: function(request, response) {
+    console.log(request);
+    $.ajax({
+      url: "https://en.wikipedia.org/w/api.php",
+      dataType: 'jsonp',
+      data: {
+        'action': "opensearch",
+        'format': "json",
+        'search': request.term
+      },
+      success: function(data) {
+        console.log(data);
+        response(data[1]);
+      }
+    });
+  }
+});
 
+
+function requestSearch() {  //function to request info of user input
    var searchVal = $("#searchBar").val();
    var requestUrl = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchVal + "&format=json&callback=?";
    if (searchVal) {
@@ -42,9 +62,7 @@ function requestSearch() {  //function to request info of user input
 }
 
 function randomSearch() {
-
   var requestUrl = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&titles=&generator=random&exintro=1&inprop=url&grnlimit=10";
-
     $.ajax({
       type: 'GET',
       url: requestUrl,
