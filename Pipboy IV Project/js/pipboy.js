@@ -121,7 +121,7 @@ $(document).ready(function(){
 
 
     $("#bgvid").on("ended", function() {
-        window.location.href = 'file:///C:/Users/Marcos/Desktop/Code Developer/Udemy/Pipboy IV Project/index.html';
+        window.location.href = 'https://aidosmarcos.github.io/Portfolio/Pipboy%20IV%20Project/index.html';
      });
 
     $('.item-list a').on('click', function(e) {
