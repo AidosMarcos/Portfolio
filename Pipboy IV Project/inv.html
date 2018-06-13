@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PipBoy</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a href="index.html" class="nav-link">STAT</a> </li>
+          <li class="nav-item active"> <a href="inv.html" class="nav-link">INV</a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link">DATA</a> </li>
+          <li class="nav-item"> <a href="map.html" class="nav-link">MAP</a> </li>
+          <li class="nav-item"> <a href="radio.html" class="nav-link">RADIO</a> </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#status" class="nav-link" data-toggle="tab">WEAPONS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#special" class="nav-link" data-toggle="tab">APPAREL</a>
+            </li>
+              <li class="nav-item">
+                <a href="#perks" class="nav-link" data-toggle="tab">AID</a>
+              </li>
+          </ul>
+          <div class="tab-content inv-content">
+            <div class="tab-pane active full" id="status" role="tabpanel">
+              <!--inventory list-->
+              <ul class="item-list">
+                <li><a href="#" class="44Pistol">.44 Pistol</a></li>
+                <li><a href="#" class="10mmPistol">10mm Pistol</a></li>
+                <li><a href="#" class="assaultRifle">Assault Rifle</a></li>
+                <li><a href="#" class="laserPistol">Laser Pistol</a></li>
+                <li><a href="#" class="minigun">Minigun</a></li>
+                <li><a href="#" class="combShotgun">Combat Shotgun</a></li>
+                <li><a href="#" class="reba">Hunting Rifle - Reba</a></li>
+              </ul>
+              <!--weapon image display-->
+              <div class="item-image">
+                <div>
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="img-fluid weapImage" src="img/44_pistol.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--weapons stats display-->
+              <div class="item-stats">
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="damage pull-right"></div>
+                      <div class="pull-left">Damage</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="ammo pull-right"></div>
+                      <div class="pull-left">Ammo</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="fire_rate pull-right"></div>
+                      <div class="pull-left">Fire Rate</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="range pull-right"></div>
+                      <div class="pull-left">Range</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="accuracy pull-right"></div>
+                      <div class="pull-left">Accuracy</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="weight pull-right"></div>
+                      <div class="pull-left">Weight</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="value pull-right"></div>
+                      <div class="pull-left">Value</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="special" role="tabpanel">
+              SPECIAL
+            </div>
+            <div class="tab-pane" id="perks" role="tabpanel">
+              PERKS
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <navbar class="navbar navbar-light pip-footer">
+      <div class="row">
+        <div class="col-3 weightMarker">
+          <div class="col-2 weight">
+            <img src="img/Weight-icon.png" class="img-fluid">
+          </div>
+          <div class="col-10 weightTotal"></div>
+        </div>
+        <div class="col-6">
+          <span>LEVEL 1</span>
+          <div class="level-progress">
+            <div class="level-progress-indicator"></div>
+          </div>
+        </div>
+        <div class="col-3 text-right">
+          AP 50/50
+        </div>
+      </div>
+    </navbar>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.js"></script>
+  </body>
+</html>

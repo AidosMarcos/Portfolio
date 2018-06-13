@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PipBoy</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a href="index.html" class="nav-link">STAT</a> </li>
+          <li class="nav-item"> <a href="inv.html" class="nav-link">INV</a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link">DATA</a> </li>
+          <li class="nav-item active"> <a href="map.html" class="nav-link">MAP</a> </li>
+          <li class="nav-item"> <a href="radio.html" class="nav-link">RADIO</a> </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="map-container">
+          <div id="draggable" class="ui-widget-content">
+              <img src="img/Fo4-pip-map.png">
+            </div>
+      </div>
+      
+    </div>
+
+
+
+    <navbar class="navbar navbar-light pip-footer">
+      <div class="row">
+        <div class="col-3 weightMarker">
+          <div class="col-2 weight">
+            <img src="img/Weight-icon.png" class="img-fluid">
+          </div>
+          <div class="col-10 weightTotal"></div>
+        </div>
+        <div class="col-6">
+          <span>LEVEL 1</span>
+          <div class="level-progress">
+            <div class="level-progress-indicator"></div>
+          </div>
+        </div>
+        <div class="col-3 text-right">
+          AP 50/50
+        </div>
+      </div>
+    </navbar>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.js"></script>
+  </body>
+</html>
